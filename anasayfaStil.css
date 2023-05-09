@@ -1,0 +1,47 @@
+#anasayfa-body{
+    background: url(karsArkaplan.jpg);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.menu{
+    margin-top: 10px;
+    width: 100%;
+    background-color: grey;
+    padding: 0;
+}
+
+.menu ul{
+    margin-left: 50px;
+    padding: 0;
+    width: 80%;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 15px;
+    margin: 0;line-height: 50px;
+    text-align: center;
+}
+
+.menu a{
+    width: 120px;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0;
+    color: white;
+    font-weight: bolder;
+    
+    border-radius: 8px;
+}
+
+.menu a:hover{
+    color: rgb(209, 209, 195);
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5);
+    
+}
