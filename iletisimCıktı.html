@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="iletisimFormuStil.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>İletişim Formu Gönderilen Bilgiler</title>
+</head>
+<body>
+    <div class="iletisimCıktısı">
+        <h1>İletişim Formu Sonuçları</h1>
+        <div id="result">
+            <p><strong>İsim:</strong> {{ name }}</p>
+            <p><strong>E-posta:</strong> {{ email }}</p>
+            <p><strong>Mesaj:</strong> {{ message }}</p>
+        </div>
+        <a href="anasayfa.html">Anasayfaya Dön</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        new Vue({
+            el: '#result',
+            data: {
+                name: params.get('name'),
+                email: params.get('email'),
+                message: params.get('message')
+            }
+        });
+    </script>   
+</body>
+</html>
