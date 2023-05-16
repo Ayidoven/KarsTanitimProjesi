@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şehrim</title>
+    <link rel="stylesheet" href="sehrimStil.css">
+</head>
+<body>
+    <div class="container">
+       
+        <!-- BUTTONS (input/labels) -->
+        <input type="radio" name="slider" id="slide-1-trigger" class="trigger" checked>
+        <label class="btn" for="slide-1-trigger"></label>
+        <input type="radio" name="slider" id="slide-2-trigger" class="trigger">
+        <label class="btn" for="slide-2-trigger"></label>
+        <input type="radio" name="slider" id="slide-3-trigger" class="trigger">
+        <label class="btn" for="slide-3-trigger"></label>
+        <input type="radio" name="slider" id="slide-4-trigger" class="trigger">
+        <label class="btn" for="slide-4-trigger"></label>
+
+        <!-- SLIDES -->
+        <div class="slide-wrapper">
+            <div id="slide-role">
+                <div class="slide slide-1" onclick="redirectTo('https:/kvmgm.ktb.gov.tr/TR-45340/ani-tarihi-kenti-kars.html')"></div>
+                <div class="slide slide-2" onclick="redirectTo('https:/www.kulturportali.gov.tr/turkiye/mus/ilprojeleri/aziz-prkitch-kecel-kilise')"></div>
+                <div class="slide slide-3" onclick="redirectTo('https:/www.kars.bel.tr/serhat-sehri-kars')"></div>
+                <div class="slide slide-4" onclick="redirectTo('https:/tr.wikipedia.org/wiki/Fethiye_Camii_(Kars)')"></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="content">
+        
+
+        <div class="info">
+            <h2>Şehir Nüfusu</h2>
+            <p>Kars 2023 nüfusu, tahmini verilere göre 272.997. Bu nüfus verisi, eski yıllarıdaki nüfus artış hızlarına göre tahmini hesaplanmıştır.</p>
+        </div>
+
+        <div class="info">
+            <h2>Gezilecek Yerler</h2>
+            <p>
+                Kars, tarihi ve kültürel zenginlikleriyle turistlerin ilgisini çeken bir şehirdir. Şehirde gezilecek yerler arasında en ünlüsü Ani Harabeleri'dir. Ani Harabeleri, Orta Çağ'dan kalma tarihi bir yerleşim alanıdır ve tarihi yapısıyla büyüleyici bir atmosfere sahiptir. Ayrıca Kars Kalesi, şehrin simgelerinden biridir ve tarihi dokusuyla ziyaretçileri etkiler. Kümbet Camii, Selçuklu döneminden kalma önemli bir yapı olarak dikkat çekerken, Evliya Camii ise Osmanlı dönemine ait bir ibadet mekanıdır. Kars'a geldiğinizde ayrıca Sarıkamış Kayak Merkezi'ne de uğramanızı öneririm. Sarıkamış, doğal güzelliği ve kış sporları imkanlarıyla ünlü bir kayak merkezidir. Bu gezilecek yerler, Kars'ın tarihi ve kültürel mirasını keşfetmek isteyen ziyaretçiler için keyifli bir deneyim sunar.
+            </p>
+        </div>
+
+        
+        <a href="index.html">Anasayfaya Dön</a>
+    </div>
+   <script>
+     function redirectTo(url) {
+    if (url.startsWith("http://")) {
+        url = url.replace("http://", "https://");
+    }
+    window.location.href = url;
+}
+   </script>
+</body>
+</html>
