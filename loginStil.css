@@ -43,7 +43,7 @@ form input{
     transition: 0.2s linear;
 }
 
-form input[type = "email"], form input[type="password"]{
+form input[type = "text"], form input[type="password"]{
     border: solid 2px rgba(19, 215, 222, 0.8);
 }
 
@@ -54,7 +54,7 @@ form input[type= "submit"]{
     width: 35%;
 }
 
-form input[type = "email"]:focus, form input[type="password"]:focus{
+form input[type = "text"]:focus, form input[type="password"]:focus{
     width: 90%;
     border: solid 2px purple;
 }
