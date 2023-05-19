@@ -4,38 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giriş Sayfası</title>
-    <link rel="stylesheet" href="loginStil.css">
-
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
-<body id="login-body">
-    <form id="login-form" method="post">
-        <h3 id="form-h3">Hoşgeldiniz.</h3>
-        <h3 id="form-h3">Lütfen giriş yapınız.</h3>
-        <input type="text" name="kullaniciadi" placeholder="Email" id="email" required>
-        <input type="password" name="sifre" placeholder="Sifreniz" id="sifre" required>
-        <input type="submit" value="Giriş Yap" onclick="auth()">
-        
-    </form>
-    <script>
-        function auth() {
-            var email = document.getElementById("email").value;
-            var password = document.getElementById("sifre").value;
-            if(email == "b211210015@gmail.com" && password == "56344093352"){
-                window.location.assign("hakkımda.html");
-                alert("Giris Basarili");
-            }
-            else{
-                alert("Kullanici adi veya parola hatali.");
-                return;
-                
-            }
-        }
-
-        document.querySelector('form').addEventListener('submit', function (e) {
-          e.preventDefault(); // Formun otomatik gönderimini engelle
-          login();
-        });
-    </script>
+<body>
+    <div id="form">
+        <h1>Giriş Sayfası</h1>
+        <form id="loginForm" action="login.php" name="form" method="POST">
+            <input type="text" id="user" name="email" placeholder="Email"><br><br>
+            <input type="password" id="pass" name="password" placeholder="Sifreniz"><br><br>
+            <input type="submit" id="btn" value="Giriş">
+            
+        </form>
+    </div>
 </body>
 </html>
