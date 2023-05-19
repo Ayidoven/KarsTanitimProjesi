@@ -47,7 +47,7 @@ new Vue({
             this.submitted = false;
         },
         redirectToResultPage() {
-            // Form bilgilerini başka bir sayfada göstermek için yönlendirme yapabilirsiniz
+            
             window.location.href = 'iletisimCıktı.html' + '?name=' + encodeURIComponent(this.name) + '&email=' + encodeURIComponent(this.email) + '&message=' + encodeURIComponent(this.message);
         }
     }
