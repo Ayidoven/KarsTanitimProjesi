@@ -1,6 +1,3 @@
-/*==================
-    Base Styles
-===================*/
 
 * {
     box-sizing: border-box;
@@ -70,10 +67,6 @@ input[type="radio"] {
     overflow: hidden;
 }
 
-/*==================
-    Slides
-===================*/
-
 #slide-role {
     background: inherit;
     position: absolute;
@@ -94,8 +87,6 @@ input[type="radio"] {
     background-position: center;
 }
 
-/* backgrounds */
-
 .slide-1 {
     background-image: url("karsArkaplan.jpg");
     
@@ -114,10 +105,6 @@ input[type="radio"] {
     background-image: url("KarsFethiyeCamii.jpg");
     
 }
-
-/*===================
-    BUTTONS
-====================*/
 
 .btn,
 .btn::after {
@@ -158,8 +145,6 @@ input[type="radio"] {
     transform: scale(1.4);
 }
 
-/* buttons Atom! */
-
 .btn::after {
     content: "";
     display: inline-block;
@@ -171,12 +156,6 @@ input[type="radio"] {
     transform: scale(.5, .5);
     box-shadow: 0px 1px 5px rgba(56, 56, 56, 0.822);
 }
-
-/*====================
-        L O G I C 
- ===================*/
-
-/* slide logic */
 
 input[type="radio"]:checked#slide-2-trigger~div.slide-wrapper>div#slide-role {
     left: -100%;
@@ -190,8 +169,6 @@ input[type="radio"]:checked#slide-4-trigger~div.slide-wrapper>div#slide-role {
     left: -300%;
 }
 
-/* button logic */
-
 input[type="radio"]:checked+label.btn {
     transform: scale(1.2);
     border: 1px solid rgba(53, 53, 53, 0.308);
@@ -201,10 +178,6 @@ input[type="radio"]:checked+label.btn::after {
     transform: scale(1.1, 1.1);
     background: lightskyblue;
 }
-
-/*=====================================================================================
-                MEDIA QUERIES
-=======================================================================================*/
 
 @media only screen and (max-width: 750px) {
     .slide-wrapper {
